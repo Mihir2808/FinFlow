@@ -8,7 +8,7 @@ A production-grade **full-stack** distributed payment platform simulating a real
 
 | Asset | Link |
 |---|---|
-| **Loom walkthrough** | _Add URL after recording — [Demo Video LINK]([https://drive.google.com/file/d/1RxolJzuusXi7tnbZQdBLwqhUGS3w3_uN/view?usp=sharing])_ |
+| **Loom walkthrough** | _Add URL after recording — [Demo Video LINK](https://drive.google.com/file/d/1RxolJzuusXi7tnbZQdBLwqhUGS3w3_uN/view?usp=sharing)_ |
 | **UI on Vercel (optional)** | _Frontend only — [Vercel LINK](https://finflow1-sigma.vercel.app/login) |
 | **Run locally** | `cd infra/docker && docker compose up -d --build` → http://localhost:3001 |
 
