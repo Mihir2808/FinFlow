@@ -74,9 +74,10 @@ export function PaymentsPage() {
         <form className="card-soft" onSubmit={onSubmit}>
           <h3>Send money</h3>
           <p className="muted">
-            Tip: register a second user, create their wallet, copy their user id, and paste it
-            as payee. On approval the amount is debited from you and credited to them. Amounts
-            over 50,000 BRL are fraud-rejected.
+            Tip: payee must have a wallet. To demo <strong>fraud</strong>, your available balance
+            must be <strong>&gt; 50,000</strong> (create a new account with initial balance 60000),
+            then send 50001. If balance is lower, you get <strong>Insufficient funds</strong> first —
+            fraud never runs.
           </p>
           {error && <div className="error">{error}</div>}
 
@@ -146,7 +147,10 @@ export function PaymentsPage() {
                   {activePayment.rejectionReason}
                 </div>
               )}
-              <PaymentTimeline status={activePayment.status} />
+              <PaymentTimeline
+                status={activePayment.status}
+                rejectionReason={activePayment.rejectionReason}
+              />
             </>
           )}
         </section>
