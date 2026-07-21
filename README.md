@@ -9,8 +9,7 @@ A production-grade **full-stack** distributed payment platform simulating a real
 | Asset | Link |
 |---|---|
 | **Loom walkthrough** | _Add URL after recording — [docs/LOOM-SCRIPT.md](docs/LOOM-SCRIPT.md)_ |
-| **UI on Vercel (optional)** | _Frontend only — [LINK](https://finflow1-sigma.vercel.app/login) |
-| **Push to GitHub** | [docs/GITHUB-PUSH.md](docs/GITHUB-PUSH.md) |
+| **UI on Vercel (optional)** | _Frontend only — [Vercel LINK](https://finflow1-sigma.vercel.app/login) |
 | **Run locally** | `cd infra/docker && docker compose up -d --build` → http://localhost:3001 |
 
 > **Note:** The full stack (Kafka + microservices) is designed for Docker Compose demos. The React UI can be hosted on Vercel for free; API calls need a running local/cloud backend.
